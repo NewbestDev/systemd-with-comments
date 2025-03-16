@@ -6,14 +6,14 @@
 #include "build.h"
 #include "main-func.h"
 
-static bool arg_verbose = false;
+static bool arg_verbose = false; 
 
 static enum {
         ACTION_AC_POWER,
         ACTION_LOW,
 } arg_action = ACTION_AC_POWER;
 
-static void help(void) {
+static void help(void) {   //shows possible arguments for systemd-ac-power command
         printf("%s\n\n"
                "Report whether we are connected to an external power source.\n\n"
                "  -h --help             Show this help\n"
